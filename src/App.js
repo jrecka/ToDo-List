@@ -8,7 +8,7 @@ class  App extends React.Component {
       {
         id: 1,
         title: "Walk with my dog",
-        completed: false
+        completed: true
       },
       {
         id: 2,
@@ -22,11 +22,15 @@ class  App extends React.Component {
       },
     ]
   }
+  markComplete = (id) => {
+    console.log(id);
+  }
   render() {
-  return (
+   return (
     <div className="App">
       <h1>Lol</h1>
-      <Todos todos={this.state.todos}/>
+      <Todos todos={this.state.todos} 
+        markComplete={this.markComplete} />
     </div>
     );
   }
