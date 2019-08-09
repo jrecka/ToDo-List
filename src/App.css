@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Laila&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -5,10 +7,27 @@
 }
 
 .App {
+  height: 100vh;
+  background-image: url('https://images.pexels.com/photos/997719/pexels-photo-997719.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-position: cover;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   text-align: center;
 }
+.container {
+  position: relative;
+  top: 15%;
+}
+ h1 {
+  font-family: 'Laila', serif;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #a3b8b9b3;
+  border: 2px solid #5b5c5799;
+  border-radius: 10px 10px 0 0;
+  padding: 15px 0;
+
+}  
 
 a {
   text-decoration: none;

@@ -28,9 +28,12 @@ class  App extends React.Component {
   render() {
    return (
     <div className="App">
-      <h1>Lol</h1>
+      <div className = 'container'>
+
+      <h1>Now is the right moment</h1>
       <Todos todos={this.state.todos} 
         markComplete={this.markComplete} />
+        </div>
     </div>
     );
   }

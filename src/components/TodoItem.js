@@ -6,9 +6,13 @@ class TodoItem extends React.Component {
         return {
             width: '50%',
             margin: '0 auto',
-            backgroundColor: 'rgb(239, 212, 234)',
             padding: '10px',
-            borderBottom: '1px #0f2cfa dotted',
+            backgroundColor: '#a3b8b9b3',
+            borderBottom: '2px solid #5b5c5799',
+            borderRight: '2px solid #5b5c5799',
+            borderLeft: '2px solid #5b5c5799',
+            fontSize: '20px',
+
             textDecoration: this.props.todo.completed ? 'line-through' : 'none'
         }
     }
