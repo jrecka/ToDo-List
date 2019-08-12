@@ -18,29 +18,50 @@
   position: relative;
   top: 15%;
 }
- h1 {
-  font-family: 'Laila', serif;
+.rounded-edges {
+  border-radius: 5px;
+}
+.list-decoration {
   width: 50%;
   margin: 0 auto;
+  padding: 10px;
   background-color: #a3b8b9b3;
-  border: 2px solid #5b5c5799;
+  border-bottom: 2px solid #5b5c5799;
+  border-right: 2px solid #5b5c5799;
+  border-left: 2px solid #5b5c5799;
+}
+h1 {
+  font-family: 'Laila', serif;
+  border: 2px solid #5b5c5799; 
   border-radius: 10px 10px 0 0;
-  padding: 15px 0;
+}
+form input {
+  /* flex:10; */
+  width: 65%;
+  padding: 5px;
+}
+form input:last-of-type{
+  width: 30%;
+}
+.list-decoration p {
+  font-size: 20px;
 
-}  
-
+}
 a {
   text-decoration: none;
 }
-
-.btn-style {
-  color:#7e2c32;
+.btn {
   padding: 5px 10px;
-  margin-left: 10px;
-  border: 1px solid#7e2c32;
-  border-radius: 5px;
   background-color: transparent;
   font-weight: bold;
-  cursor: pointer;
   float: right;
+  cursor: pointer;
+}
+.submit-btn {
+  border: 1px solid #000;
+}
+.delete-btn {
+  margin-left: 10px;
+  color:#7e2c32;
+  border: 1px solid#7e2c32;
 }
