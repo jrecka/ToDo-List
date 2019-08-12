@@ -23,9 +23,17 @@ class TodoItem extends React.Component {
             <div style={this.getStyle()}>
                 <p>
                     <input type="checkbox" 
-                        onChange={this.props.markComplete.bind(this, id)}
+                        onChange={
+                            this.props.markComplete.bind(this, id)
+                        }
                     /> {'  '}
                     {title}
+                    <button onClick={
+                        this.props.deleteTodo.bind(this, id)
+                        }
+                        className ="btn-style">
+                            <i className="fas fa-trash-alt"></i>
+                    </button>
                 </p>
             </div>
         )

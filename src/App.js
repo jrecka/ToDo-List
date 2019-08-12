@@ -8,7 +8,7 @@ class  App extends React.Component {
       {
         id: 1,
         title: "Walk with my dog",
-        completed: true
+        completed: false
       },
       {
         id: 2,
@@ -22,8 +22,22 @@ class  App extends React.Component {
       },
     ]
   }
+  // Toggle complete
   markComplete = (id) => {
-    console.log(id);
+    this.setState({
+      todos: this.state.todos.map( todo => {
+        if(todo.id === id) {
+          todo.completed = !todo.completed
+        }
+        return todo;
+      })
+    });
+  }
+  // Delete Todo
+  deleteTodo = (id) => {
+    this.setState({
+      todos: [...this.state.todos.filter(todo => todo.id !== id)]
+    })
   }
   render() {
    return (
@@ -32,7 +46,8 @@ class  App extends React.Component {
 
       <h1>Now is the right moment</h1>
       <Todos todos={this.state.todos} 
-        markComplete={this.markComplete} />
+        markComplete={this.markComplete}
+        deleteTodo={this.deleteTodo} />
         </div>
     </div>
     );
