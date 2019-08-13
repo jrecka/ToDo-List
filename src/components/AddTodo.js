@@ -1,5 +1,6 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
+import TodoItem from './TodoItem';
 class AddTodo extends React.Component {
     constructor(props){
         super(props);
@@ -40,4 +41,8 @@ class AddTodo extends React.Component {
     }
 }
 
+// PropTypes
+AddTodo.propTypes = {
+    addTodo: PropTypes.func.isRequired
+}
 export default AddTodo;
