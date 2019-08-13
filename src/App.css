@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Laila&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css?family=Laila&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -8,15 +8,37 @@
 
 .App {
   height: 100vh;
-  background-image: url('https://images.pexels.com/photos/997719/pexels-photo-997719.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-  background-position: cover;
-  font-family: Arial, Helvetica, sans-serif;
+  /* background-image: url('https://images.pexels.com/photos/997719/pexels-photo-997719.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); */
+  background-image: url('https://images.pexels.com/photos/531321/pexels-photo-531321.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   font-size: 14px;
   text-align: center;
+  color: #fff;
+
 }
 .container {
   position: relative;
   top: 15%;
+}
+header {
+  width: 100vw;
+  font-size: 18px;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  /* background-color: #fefefc96; */
+}
+.start-page {
+  position: relative;
+  top:30%;
+  font-size: 70px;
+}
+.start-page p{
+  font-size: 40px;
+  font-style: italic;
+  font-family: none;
 }
 .rounded-edges {
   border-radius: 5px;
@@ -29,14 +51,13 @@
   border-bottom: 2px solid #5b5c5799;
   border-right: 2px solid #5b5c5799;
   border-left: 2px solid #5b5c5799;
+  color: #000;
 }
-h1 {
-  font-family: 'Laila', serif;
+.list-decoration:first-child {
   border: 2px solid #5b5c5799; 
   border-radius: 10px 10px 0 0;
 }
 form input {
-  /* flex:10; */
   width: 65%;
   padding: 5px;
 }
@@ -45,10 +66,14 @@ form input:last-of-type{
 }
 .list-decoration p {
   font-size: 20px;
-
+  
 }
 a {
   text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 15px;
+  letter-spacing: 2px;
 }
 .btn {
   padding: 5px 10px;
