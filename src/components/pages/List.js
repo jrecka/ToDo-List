@@ -3,6 +3,7 @@ import AddTodo from '../../components/AddTodo';
 import Todos from '../../components/Todos';
 import axios from 'axios';
 
+
 class List extends Component {
     constructor(props){
         super(props);
@@ -29,7 +30,7 @@ class List extends Component {
     }
     // Delete Todo
     deleteTodo = (id) => {
-        axios.delete(`'https://jsonplaceholder.typicode.com/todos/${id}`)
+        axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
             .then( response => 
                 this.setState({
                     todos: [...this.state.todos.filter(
@@ -48,7 +49,8 @@ class List extends Component {
   
         todos: [...this.state.todos, response.data]
       }) 
-      ) 
+      )
+    // console.log(title) 
     // }
     // const newTodo = {
     //   id: uuid.v4(),
@@ -58,9 +60,8 @@ class List extends Component {
     render() {
         return(
             <div className='container'>
-                {/* <div className='list-decoration'></div> */}
                 <AddTodo
-                    addTodo={this.state.addTodo}/>
+                    addTodo={this.addTodo}/>
                 <Todos 
                     todos={this.state.todos}
                     markComplete={this.markComplete}

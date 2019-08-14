@@ -14,14 +14,15 @@ class TodoItem extends React.Component {
             <div 
                 style={this.getStyle()}
                 className='list-decoration'>
-                <p>
                     <input 
                         type="checkbox" 
                         onChange={
                             this.props.markComplete.bind(this, id)
                         }
-                    /> {'  '}
-                    {title}
+                        /> {'  '}
+                    <p>
+                        {title}
+                    </p>
                     <button 
                         onClick={
                             this.props.deleteTodo.bind(this, id)
@@ -29,7 +30,6 @@ class TodoItem extends React.Component {
                         className ="delete-btn rounded-edges btn">
                             <i className="fas fa-trash-alt"></i>
                     </button>
-                </p>
             </div>
         )
     }

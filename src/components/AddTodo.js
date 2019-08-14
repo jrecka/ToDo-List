@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class AddTodo extends React.Component {
+class AddTodo extends Component {
     constructor(props){
         super(props);
         this.state = {
