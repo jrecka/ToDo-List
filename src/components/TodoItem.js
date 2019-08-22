@@ -14,15 +14,15 @@ class TodoItem extends React.Component {
             <div 
                 style={this.getStyle()}
                 className='list-decoration'>
+                    <label>
                     <input 
                         type="checkbox" 
                         onChange={
                             this.props.markComplete.bind(this, id)
                         }
                         /> {'  '}
-                    <p>
                         {title}
-                    </p>
+                    </label>
                     <button 
                         onClick={
                             this.props.deleteTodo.bind(this, id)

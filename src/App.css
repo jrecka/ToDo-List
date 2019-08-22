@@ -9,17 +9,14 @@
   height: 100vh;
   background-image: url('https://images.pexels.com/photos/531321/pexels-photo-531321.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-size: cover;
+  background-position: center;
   font-family: 'Montserrat', sans-serif;
-  /* font-family: Arial, Helvetica, sans-serif; */
   font-size: 14px;
   text-align: center;
   color: #fff;
 
 }
-.container {
-  position: relative;
-  top: 15%;
-}
+/* HEADER */
 header {
   width: 100vw;
   font-size: 18px;
@@ -27,9 +24,19 @@ header {
   position: fixed;
   top: 0;
 }
+.container {
+position: relative;
+top: 15%;
+/* transform: translateY(30%); */
+text-align: left;
+}
+.rounded-edges {
+  border-radius: 5px;
+}
+/* START PAGE */
 .start-page {
   position: relative;
-  top:30%;
+  top:15%;
   font-size: 70px;
 }
 .start-page p{
@@ -37,9 +44,36 @@ header {
   font-style: italic;
   font-family: none;
 }
-.rounded-edges {
-  border-radius: 5px;
+
+@media screen and (min-width: 900px) {
+  .start-page {
+    top: 20%;
+  }
 }
+
+/* LINK */
+a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 15px;
+  letter-spacing: 2px;
+}
+/* FORM STYLE */
+form input {
+  width: 65%;
+  padding: 5px;
+}
+form input:last-of-type{
+  width: 30%;
+}
+input[type=checkbox] {
+  display: none
+}
+label {
+  cursor: pointer;
+}
+/* LIST DECORATION */
 .list-decoration {
   width: 50%;
   margin: 0 auto;
@@ -56,25 +90,11 @@ header {
   border: 2px solid #5b5c5799; 
   border-radius: 10px 10px 0 0;
 }
-.list-decoration p {
+.list-decoration label {
   font-size: 18px;
-  margin: 0 10px;
-  
+  margin: 0 15px;
 }
-form input {
-  width: 65%;
-  padding: 5px;
-}
-form input:last-of-type{
-  width: 30%;
-}
-a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  margin: 15px;
-  letter-spacing: 2px;
-}
+/* BUTTONS */
 .btn {
   padding: 5px 10px;
   background-color: transparent;
@@ -82,12 +102,31 @@ a {
   float: right;
   cursor: pointer;
 }
+/* SUBMIT */
 .submit-btn {
-  border: 1px solid #000;
+  border: 1px solid #7E2C4B;
+  color: #7E2C4B;
 }
+.submit-btn:disabled {
+  opacity: .5;
+}
+/* DELETE */
 .delete-btn {
   height: 30px;
   border: 1px solid#7e2c32;
   margin-left: 10px;
   color:#7e2c32;
+}
+/* ACTIVE */
+.submit-btn:active, .delete-btn:active {
+  background-color: #7E2C4B;
+  color: #829494;
+  border: none;
+}
+
+/* ABOUT */
+.about {
+  position: relative;
+  top: 15%;
+  font-size: 30px;
 }

@@ -34,7 +34,8 @@ class AddTodo extends Component {
                     onChange={this.onChange}/>
                 <input 
                     type='submit' 
-                    value="Submit"
+                    value='Submit'
+                    disabled={this.state.title? false : true}
                     className="btn rounded-edges submit-btn"/>
             </form>
         )
