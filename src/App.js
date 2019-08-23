@@ -2,13 +2,8 @@ import React, {Component} from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import List from './components/pages/List';
-// import AddTodo from './components/AddTodo';
-// import Todos from './components/Todos';
 import About from './components/pages/About';
 import './App.css';
-// import uuid from 'uuid';
-// import axios from 'axios';
-
 
 class  App extends Component {
   

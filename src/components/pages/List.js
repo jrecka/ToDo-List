@@ -50,12 +50,6 @@ class List extends Component {
         todos: [...this.state.todos, response.data]
       }) 
       )
-    // console.log(title) 
-    // }
-    // const newTodo = {
-    //   id: uuid.v4(),
-    //   title,
-    //   completed: false
   }
     render() {
         return(

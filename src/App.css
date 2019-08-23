@@ -59,6 +59,9 @@ a {
   margin: 15px;
   letter-spacing: 2px;
 }
+a:hover {
+  font-size: 22px;
+}
 /* FORM STYLE */
 form input {
   width: 65%;
@@ -129,4 +132,7 @@ label {
   position: relative;
   top: 15%;
   font-size: 30px;
+}
+.about h1 {
+  font-weight: lighter;
 }
